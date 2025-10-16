@@ -1,3 +1,7 @@
+補足
+===
+PurpleMine2が好きすぎて、OpaleをForkしてRedmine6.1対応用のPurpleMine2を作成。
+
 Opale
 =====
 
