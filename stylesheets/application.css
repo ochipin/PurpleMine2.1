@@ -323,10 +323,12 @@ div.pre-wrapper:hover a.copy-pre-content-link {
 }
 
 /* グローバルテンプレートアイコンの位置を調整 */
+/* 管理者画面に表示されるグローバルテンプレートアイコンの位置を調整 */
 #admin-menu a.icon-global_issue_templates {
-  text-indent: 20px;
-  background-repeat: no-repeat;
-  background-position: left;
+  background: none;
+}
+.icon-global_issue_templates::before {
+  content: url(/assets/plugin_assets/redmine_issue_templates/issue_templates-bacdaa29.png);
 }
 .icon-erase {
   background-repeat: no-repeat;
