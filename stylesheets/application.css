@@ -440,3 +440,111 @@ div.news .reaction {
   display: inline-flex;
   gap: 10px;
 }
+
+/* アバター */
+.avatar {
+  border-radius: 20%;
+  display: inline-flex;
+  vertical-align: middle;
+}
+span[role="img"].avatar {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  align-items: center;
+  display: inline-flex;
+  font-size: calc(24px * .4);
+  justify-content: center;
+  user-select: none;
+  font-weight: 700;
+}
+.avatar.s13 {
+  block-size: 13px;
+  inline-size: 13px;
+}
+span[role="img"].avatar.s13 {
+  font-size: calc(16px * .3);
+}
+.avatar.s16 {
+  block-size: 16px;
+  inline-size: 16px;
+}
+span[role="img"].avatar.s16 {
+  font-size: calc(16px * .4);
+}
+.avatar.s22 {
+  block-size: 22px;
+  inline-size: 22px;
+}
+span[role="img"].avatar.s22 {
+  font-size: calc(22px * .4);
+}
+.avatar.s24 {
+  block-size: 24px;
+  inline-size: 24px;
+}
+span[role="img"].avatar.s24  {
+  font-size: calc(24px * .4);
+}
+.avatar.s40 {
+  block-size: 40px;
+  inline-size: 40px;
+}
+.avatar-color-0 {
+  background-color: #f03e3e; /* oc-red-7 */
+  color: #ffffff;
+}
+.avatar-color-1 {
+  background-color: #fd7e14; /* oc-orange-6 */
+  color: #ffffff;
+}
+.avatar-color-2 {
+  background-color: #ffd43b; /* oc-yellow-4 */
+  color: #000000;
+}
+.avatar-color-3 {
+  background-color: #37b24d; /* oc-green-7 */
+  color: #ffffff;
+}
+.avatar-color-4 {
+  background-color: #15aabf; /* oc-cyan-6 */
+  color: #ffffff;
+}
+.avatar-color-5 {
+  background-color: #1c7ed6; /* oc-blue-7 */
+  color: #ffffff;
+}
+.avatar-color-6 {
+  background-color: #ae3ec9; /* oc-grape-7 */
+  color: #ffffff;
+}
+.avatar-color-7 {
+  background-color: #e64980; /* oc-pink-6 */
+  color: #ffffff;
+}
+span[role="img"].avatar.s24  {
+  font-size: calc(24px * .4);
+}
+
+@media screen and (max-width: 899px) {
+  body .flyout-menu+div #header {
+      height:54px;
+      background-color: #614ba6
+  }
+
+  body #header {
+      height: 54px;
+      background-color: #614ba6;
+  }
+
+  #admin-menu a.icon {
+    padding-left: 20px;
+  }
+  #admin-menu a.selected {
+    padding-left: 20px !important;
+  }
+  #admin-menu li>a .icon-svg {
+    stroke: white;
+  }
+  #admin-menu a.selected .icon-svg {
+    stroke: black !important;
+  }
+}
