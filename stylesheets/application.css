@@ -13,6 +13,7 @@
   background-color: #614ba6;
   color: #fff;
 }
+details+p, details+ul, details+ol{margin-top: 10px !important}
 a {
   color: #0051cc;
   text-decoration: none
