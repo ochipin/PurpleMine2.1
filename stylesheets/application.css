@@ -13,6 +13,9 @@
   background-color: #614ba6;
   color: #fff;
 }
+div.wiki table {
+  width: auto !important;
+}
 details+p, details+ul, details+ol{margin-top: 10px !important}
 a {
   color: #0051cc;
@@ -61,6 +64,15 @@ span.private,.badge-private {
   border-color: #dadce6;
   background-color: #f6f6f9
 }
+.icon-erase {
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  padding-left: 20px;
+  cursor: pointer;
+}
+a.template_tooltip {
+  background-position: 0 center;
+}
 summary{color:#0051CC;cursor:pointer}
 summary:hover{color:#0065FF;text-decoration:underline}
 select:focus,textarea:focus,input[type=datetime]:focus,input[type=datetime-local]:focus,input[type=date]:focus,input[type=month]:focus,input[type=time]:focus,input[type=week]:focus,input[type=number]:focus,input[type=url]:focus,input[type=tel]:focus,input[type=color]:focus,input[type=search]:focus,input[type=email]:focus,input[type=text]:focus,input[type=password]:focus {
@@ -99,7 +111,9 @@ table.list tbody tr.priority-default .priority::before, .issue.details.priority-
   background-color: #e5123d;
   color: #fff
 }
-table.list td {text-align: left;}
+table.list td {
+  text-align: left;
+}
 table.list tbody tr.priority-lowest .priority::before,.issue.details.priority-lowest .attributes td.priority::before,.issue.details.priority-lowest .attribute.priority .value::before {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3e%3cpath fill='%23029934' d='M11.707 7.293a.999.999 0 00-1.414 0L8 9.586V2a1 1 0 10-2 0v7.586L3.707 7.293a.999.999 0 10-1.414 1.414l4 4a.997.997 0 001.414 0l4-4a.999.999 0 000-1.414z'/%3e%3c/svg%3e")
 }
@@ -323,22 +337,12 @@ div.pre-wrapper:hover a.copy-pre-content-link {
   display: block;
 }
 
-/* グローバルテンプレートアイコンの位置を調整 */
 /* 管理者画面に表示されるグローバルテンプレートアイコンの位置を調整 */
 #admin-menu a.icon-global_issue_templates {
   background: none;
 }
 .icon-global_issue_templates::before {
   content: url(/assets/plugin_assets/redmine_issue_templates/issue_templates-bacdaa29.png);
-}
-.icon-erase {
-  background-repeat: no-repeat;
-  background-position: 0 center;
-  padding-left: 20px;
-  cursor: pointer;
-}
-a.template_tooltip {
-  background-position: 0 center;
 }
 
 /* デフォルトと同じイシューのヘッダに変更する */
