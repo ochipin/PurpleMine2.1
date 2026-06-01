@@ -1,5 +1,27 @@
 @import url(./opale.css);
 
+/* noto-sans-jp-regular - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/noto-sans-jp-v56-japanese_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-jp-700 - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../webfonts/noto-sans-jp-v56-japanese_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*システム全体のフォントを設定する */
+body {
+  font-family: 'Noto Sans JP', system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
 /* PurpleMine2寄りの色にする */
 #top-menu {
   box-sizing: border-box;
@@ -318,10 +340,44 @@ form input[type=submit]+input:active {
 }
 #activity dt {margin-top:0;}
 
+div.wiki pre {
+  background-color: #F6F6F6;
+  border: 1px solid #C0C2C7BF;
+  border-radius: 9px;
+  font-size: .875rem;
+}
+div.wiki pre code {color: #3B61B0}
+
 /* コピーボタンの場所を変更 */
 div.wiki div.pre-wrapper {
   position: relative;
 }
+
+/* カウンターリセット */
+div.wiki {
+  counter-reset: h1-step-counter;
+}
+div.wiki h1 {
+  counter-reset: h2-step-counter;
+  counter-increment: h1-step-counter;
+}
+div.wiki h1::before {
+  content: counter(h1-step-counter) ". ";
+}
+div.wiki h2 {
+  counter-reset: h3-step-counter;
+  counter-increment: h2-step-counter;
+}
+div.wiki h2::before {
+  content: counter(h1-step-counter) "." counter(h2-step-counter) ". ";
+}
+div.wiki h3 {
+  counter-increment: h3-step-counter;
+}
+div.wiki h3::before {
+  content: counter(h1-step-counter) "." counter(h2-step-counter) "." counter(h3-step-counter) ". ";
+}
+
 div.pre-wrapper a.copy-pre-content-link {
   position: absolute;
   top: 3px;
