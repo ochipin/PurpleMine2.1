@@ -227,6 +227,11 @@ form input[type=submit]+input:active {
   background-color: #027b2a;
   box-shadow: inset 0 3px 4px -2px #027327
 }
+.task-list-item input[type=radio], .task-list-item input[type=checkbox] {
+  vertical-align: middle;
+  top: -4px;
+  position: relative;
+}
 .agile-board table.list.issues-board tbody tr {
   background-color: #fff
 }
